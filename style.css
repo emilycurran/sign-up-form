@@ -1,3 +1,55 @@
+main {
+    display: flex;
+}
+
 #left-panel{
     background-color: green;
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+#right-panel{
+    background-color: red;
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#banner-panel{
+    height: 150px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    height: 150px;
+    width: 150px;
+    background-color: white;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+}
+
+#form-panel {
+    background-color: yellow;
+    padding: 20px;
+}
+
+form {
+    background: yellowgreen;
+}
+
+
+
+
+
+
+
