@@ -45,11 +45,38 @@ header {
 
 form {
     background: yellowgreen;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
+button{
+    padding: 10px;
+    width: 200px;
+}
 
+label {
+    background-color: red;
+    border: 5px;
+    width: 200px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
 
+input{
+    width: 90%;
+}
 
+span.error {
+    background-color: purple;
+    width: 90%;
+}
 
+#login-create-account{
+    margin: 20px;
+}
 
-
+#login-create-account p{
+    margin-top: 20px;
+}
