@@ -11,14 +11,20 @@
 <body>
     <main>
         <div id="left-panel">
-            <div id="banner-panel">
-                <div id="logo"></div>
-            </div>
+            <div id="top-stretch"></div>
+                <div id="banner-panel">  
+                    <div id="background"></div>                  
+                    <a href="https://www.theodinproject.com">
+                        <div id="logo"></div>
+                    </a>
+                    <p>Sign-Up Form</p>                    
+                </div>
+            <div id="bottom-stretch"></div>
         </div>
         <div id="right-panel">
             <div>
                 <header>
-                    <p>This is not a real online service! You know you need something
+                    <p>This is not a real online service! You <em>know</em> you need something
                         like this in your life to help you realize your deepest dreams.
                         Sign up <em>now</em> to get started. <br> <br> You know you want to.
                     </p>
@@ -26,8 +32,8 @@
             </div>
             <div id="form-panel">    
                 <p>Let's do this!</p>            
-                <form >
-                    <label for="first-name">First Name
+                <form id="my-form">
+                    <label for="first-name" id="my-form">First Name
                         <input type="text" id="first-name" name="first-name">
                         <span class="error"></span>
                     </label>                    
@@ -39,26 +45,26 @@
                         <input type="email" id="email" name="email">
                         <span class="error"></span>
                     </label>                    
-                    <label for="phone">Phone Number
-                        <input type="tel" id="phone" name="phone-number">
+                    <label for="email-confirm">Confirm Email
+                        <input type="text" id="email-confirm">
                         <span class="error"></span>
                     </label>                    
                     <label for="password">Password
-                        <input type="pwd" id="password" name="password">
+                        <input type="password" id="password" name="password">
                         <span class="error"></span>
                     </label>                    
                     <label for="password-confirm">Confirm Password
-                        <input type="pwd" id="password-confirm">
+                        <input type="password" id="password-confirm">
                         <span class="error"></span>
                     </label>                    
                 </form>
             </div>
             <div id="login-create-account">
-                <button>create account</button>
+                <button type="submit" form="my-form">Create Account</button>
                 <p>Already have an account? <a href="http://">Log in.</a></p>
             </div>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>

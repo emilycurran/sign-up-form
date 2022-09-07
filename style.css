@@ -1,73 +1,110 @@
 main {
     display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    font-size: 18px;
 }
 
 #left-panel{
-    background-color: green;
+    background-image: url(/felix-dubois-robert-CuEvrPd3NYc-unsplash.jpg);
+    background-size: cover;
     width: 40vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-height: 530px;
 }
 
-#right-panel{
-    background-color: red;
+#right-panel{    
     width: 60vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: rgb(240, 240, 240);
 }
 
 #banner-panel{
     height: 150px;
-    background-color: black;
     display: flex;
     justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#banner-panel p{
+    color: white;
+    font-size: 30px;
+    z-index: 100;
 }
 
 #logo {
+    background-image: url(/odin-lined.png);
     height: 150px;
-    width: 150px;
-    background-color: white;
+    aspect-ratio: 380/508;
+    background-size: cover;
+}
+a{
+    z-index: 100;
+    color: rgb(0, 187, 224);
+}
+
+#top-stretch{
+    flex-grow: 1;
+}
+
+#bottom-stretch{
+    flex-grow: 3;
 }
 
 header {
-    background-color: white;
     padding: 20px;
 }
 
 #form-panel {
-    background-color: yellow;
     padding: 20px;
+    background-color: white;
+    box-shadow: 0 5px 5px rgb(0, 0, 0, 0.123);
+    font-weight: 5;
+    color: grey;
+}
+
+#form-panel p{
+    margin-bottom: 25px;
+    font-size: 25px;
 }
 
 form {
-    background: yellowgreen;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
 button{
+    appearance: none;
     padding: 10px;
     width: 200px;
+    border: 0px;
+    color: white;
+    background-color: rgb(0, 187, 224);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 
 label {
-    background-color: red;
     width: 200px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    font-size: 14px;    
 }
 
 input{
     width: 90%;
+    margin-top: 5px;
 }
 
 span.error {
-    background-color: purple;
     width: 90%;
 }
 
@@ -77,7 +114,42 @@ span.error {
 
 #login-create-account p{
     margin-top: 20px;
+    color: grey;
 }
+
+em{
+    font-style: italic;
+}
+
+#background{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+}
+
+input:focus {
+    border: none;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
+    outline: none;
+  }
+  
+
+input:focus {
+    border: none;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+    }
+
+input:invalid:focus {
+    border: 2px solid rgb(255, 69, 100);
+}
+
+input:valid:focus {
+    border: 2px solid rgb(69, 233, 255);
+}
+
 
 @media only screen and (max-width: 700px) {
     main{
@@ -85,7 +157,6 @@ span.error {
     }
 
     #left-panel {
-        background-color: salmon;
         width: 100%;
         height: 400px;
     }
@@ -100,6 +171,7 @@ span.error {
     }
 
     label {
+        appearance: none;
         width: 40%;
         margin-left: 20px;
     }
@@ -113,12 +185,10 @@ span.error {
     }
 
     #form-panel p{
-        background-color: silver;
         height: 50px;
     }
 
     span {
-        background-color: slateblue;
         margin-bottom: 30px;
     }
 
