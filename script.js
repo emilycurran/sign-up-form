@@ -1,3 +1,6 @@
+const form = document.getElementById("my-form");
+form.reset();
+
 const firstName = document.getElementById("first-name");
 const firstNameError = firstName.nextElementSibling;
 
@@ -21,7 +24,7 @@ var inputs = document.getElementsByTagName("input");
 for(var i=0; i<inputs.length; i++){
     console.log(inputs[i]);
     inputs[i].setCustomValidity("Please fill out this field."); //intiliasize all elements as invalid
-
+    inputs.value = "";
 }
 
 
@@ -72,6 +75,14 @@ passwordConfirm.addEventListener("input", (event) => {
         passwordConfirmError.textContent  = "";
         passwordConfirm.setCustomValidity("");
     }
+
+    if(passwordConfirm.value != "" && passwordConfirm.value != password.value){
+        passwordConfirmError.textContent = "Passwords must match";
+        passwordConfirm.setCustomValidity("Passwords must match");
+    }else{
+        passwordConfirmError.textContent = "";
+        passwordConfirm.setCustomValidity("");
+    }
 });
 
 
@@ -82,6 +93,14 @@ email.addEventListener("input", (event) => {
     } else {
         emailError.textContent = "";
         email.setCustomValidity("");
+    }
+
+    if(emailConfirm.value != "" && emailConfirm.value != email.value){
+        emailConfirmError.textContent = "Emails must match";
+        emailConfirm.setCustomValidity("Emails must match");
+    }else{
+        emailConfirmError.textContent = "";
+        emailConfirm.setCustomValidity("");
     }
 });
 

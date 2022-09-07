@@ -55,6 +55,16 @@ a{
 
 #bottom-stretch{
     flex-grow: 3;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+
+#bottom-stretch a{
+    background-color: black;
+    opacity: 50%;
+    color: white !important;
 }
 
 header {
