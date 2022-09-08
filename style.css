@@ -6,7 +6,7 @@ main {
 }
 
 #left-panel{
-    background-image: url(/felix-dubois-robert-CuEvrPd3NYc-unsplash.jpg);
+    background-image: url(./felix-dubois-robert-CuEvrPd3NYc-unsplash.jpg);
     background-size: cover;
     width: 40vw;
     height: 100vh;
@@ -39,7 +39,7 @@ main {
 }
 
 #logo {
-    background-image: url(/odin-lined.png);
+    background-image: url(./odin-lined.png);
     height: 150px;
     aspect-ratio: 380/508;
     background-size: cover;
