@@ -1,3 +1,3 @@
-# sing-up-form
+# sign-up-form
 
-View the live [here](https://emilycurran.github.io/sing-up-form/).
+View the live [here](https://emilycurran.github.io/sign-up-form/).
