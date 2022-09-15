@@ -116,6 +116,7 @@ input{
     margin-top: 5px;
     height: 25px;
     font-size: 16px;
+    border: none;
 }
 
 span.error {
@@ -145,7 +146,6 @@ em{
 }  
 
 input:focus {
-    border: none;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
     outline: none;
     }
